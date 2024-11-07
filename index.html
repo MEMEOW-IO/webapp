@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+<link rel="icon" type="image/png" href="images/favicons/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg" />
+<link rel="shortcut icon" href="images/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+	 <link rel="stylesheet" href="css/base.css?332423">    	 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>   
+<body class="boost">  
+ <div class="app__overflow">
+	<div class="app__body">
+ 
+		<div class="app__article">
+			<div class="tablo__body">
+				<div class="tb__header">
+					<div class="tbh__power">50.00 TH/s</div>
+					<div class="tbh__coins">50.00 CMT</div>
+				</div>
+				<div class="tb__balance">
+					<div class="tb__label">Your balance</div>
+					<div class="tb__balance-coin">
+						<i class="coin"></i>
+						<strong>0.11509415</strong> btc
+					</div>
+				</div>
+			</div>
+			 <div class="tablo__bottom">
+				<button id="withdraw">Withdraw</button>
+				<button id="swapCoin">Swap coin</button>
+			 </div>
+			 <div class="cooler__overflow">
+ 
+				<div class="cooler__body">
+					<div class="cooler__box">
+						<img src="images/fan.png" alt="" class="cooler"/>
+						<div class="cooler__coin"><i class="bitcoin"></i></div>
+					</div>
+				</div>
+			 </div>
+			 <div class="earnings__row">
+				<div class="earnings__cell">
+					<div class="ec__body">
+						<div class="ecb__label">Earnings per day</div>
+						<div class="ecb__data"><strong>0.005</strong>BTC</div>
+					</div>
+				</div>
+				<div class="earnings__cell check">
+					<div class="ec__body">
+						<div class="ecb__label">Earnings per month</div>
+						<div class="ecb__data"><strong>0.1</strong>BTC</div>
+					</div>
+				</div>
+			 </div>
+		</div>
+	</div>
+<div class="modal__overflow">
+	<div class="modal__container">
+		<div class="modal__header">
+			<i class="closemodal"></i>
+			<h2>Choose <strong>a coin</strong><br> to mine</h2>
+			<ul class="choose-coin__list">
+				<li>
+					<button class="change__coin ton_btn">
+						<div class="cc__info">
+							<i class="ton"></i>
+							<div class="cci__table">
+								<strong>TON</strong>
+								Start Mining
+							</div>
+						</div>
+						<div class="cc__checkpoint"></div>
+					</button>
+				</li>
+				<li>
+					<button class="change__coin check tron_btn">
+						<div class="cc__info">
+							<i class="tron"></i>
+							<div class="cci__table">
+								<strong>Tron(TRX)</strong>
+								Start Mining
+							</div>
+						</div>
+						<div class="cc__checkpoint"></div>
+					</button>
+				</li>
+				<li>
+					<button class="change__coin bitcoin_btn">
+						<div class="cc__info">
+							<i class="bitcoin"></i>
+							<div class="cci__table">
+								<strong>Bitcoin(BTC)</strong>
+								Start Mining
+							</div>
+						</div>
+						<div class="cc__checkpoint"></div>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="navigation__bottom">
+	<div class="navigation__cell">
+		<ul class="nav__list">
+			<li class="select">
+				<a href="index.html" class="nav__link">
+					<i><svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 23.0286V9.65714C0 9.18666 0.102062 8.74095 0.306187 8.32C0.510312 7.89905 0.791583 7.55238 1.15 7.28L9.775 0.594286C10.2781 0.198095 10.8531 0 11.5 0C12.1469 0 12.7219 0.198095 13.225 0.594286L21.85 7.28C22.2094 7.55238 22.4911 7.89905 22.6952 8.32C22.8994 8.74095 23.001 9.18666 23 9.65714V23.0286C23 23.8457 22.7182 24.5455 22.1547 25.1279C21.5912 25.7103 20.9147 26.001 20.125 26H15.8125C15.4052 26 15.064 25.8574 14.789 25.5721C14.514 25.2869 14.376 24.9342 14.375 24.5143V17.0857C14.375 16.6648 14.237 16.3121 13.961 16.0279C13.685 15.7436 13.3438 15.601 12.9375 15.6H10.0625C9.6552 15.6 9.31404 15.7426 9.039 16.0279C8.76396 16.3131 8.62596 16.6657 8.625 17.0857V24.5143C8.625 24.9352 8.487 25.2883 8.211 25.5736C7.935 25.8589 7.59383 26.001 7.1875 26H2.875C2.08437 26 1.40779 25.7093 0.845249 25.1279C0.282708 24.5465 0.000958333 23.8467 0 23.0286Z" fill="currentcolor"/></svg></i><span>Home</span>
+				</a>
+			</li>
+ 			<li >
+				<a href="boost.html" class="nav__link">
+					<i><svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.0901 20.739C21.1691 20.6805 21.2421 20.6066 21.3091 20.5368C21.8579 19.9559 22.1649 19.1785 22.1649 18.3692C22.1649 17.56 21.8579 16.7826 21.3091 16.2016L10.9092 5.25378C10.5933 5.53028 10.3359 5.87026 10.1529 6.25275C9.96998 6.63525 9.8653 7.05215 9.84534 7.47776C9.82538 7.90337 9.89058 8.32867 10.0369 8.72743C10.1832 9.12619 10.4076 9.48996 10.6962 9.79631L21.0901 20.739ZM28.731 5.14191C29.5332 5.30779 30.2648 5.7265 30.824 6.33964C32.392 8.03411 32.392 10.7867 30.824 12.4812L23.4171 20.4835C22.9551 20.9708 22.3425 21.2785 21.6841 21.3538L26.089 26L3.27722 20.8571C2.4754 20.6872 1.74436 20.2671 1.18424 19.6542C-0.394747 17.9659 -0.394747 15.2123 1.18424 13.5075L8.58518 5.51549C9.04442 5.0234 9.65811 4.71338 10.3182 4.64004L5.9132 0L28.725 5.14294L28.731 5.14191Z" fill="currentcolor"/>
+</svg>
+</i><span>Boost</span>
+				</a>
+			</li>
+ 			<li>
+				<a href="friends.html" class="nav__link">
+					<i><svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.1 13C14.6786 13 17.575 10.0924 17.575 6.5C17.575 2.90759 14.6786 0 11.1 0C7.52141 0 4.625 2.90759 4.625 6.5C4.625 10.0924 7.52141 13 11.1 13ZM15.54 14.8571H15.0602C13.8577 15.4375 12.5222 15.7857 11.1 15.7857C9.67781 15.7857 8.34813 15.4375 7.13984 14.8571H6.66C2.98312 14.8571 0 17.8518 0 21.5429V23.2143C0 24.7522 1.24297 26 2.775 26H19.425C20.957 26 22.2 24.7522 22.2 23.2143V21.5429C22.2 17.8518 19.2169 14.8571 15.54 14.8571ZM27.75 13C30.8141 13 33.3 10.5045 33.3 7.42857C33.3 4.35268 30.8141 1.85714 27.75 1.85714C24.6859 1.85714 22.2 4.35268 22.2 7.42857C22.2 10.5045 24.6859 13 27.75 13ZM30.525 14.8571H30.3053C29.5017 15.1357 28.6519 15.3214 27.75 15.3214C26.8481 15.3214 25.9983 15.1357 25.1947 14.8571H24.975C23.7956 14.8571 22.7087 15.1996 21.7548 15.7509C23.1655 17.2772 24.05 19.3027 24.05 21.5429V23.7714C24.05 23.8991 24.0211 24.021 24.0153 24.1429H34.225C35.757 24.1429 37 22.8951 37 21.3571C37 17.7647 34.1036 14.8571 30.525 14.8571Z" fill="currentcolor"/>
+</svg>
+
+</i><span>Friends</span>
+				</a>
+			</li>
+ 			<li>
+				<a href="earn.html" class="nav__link">
+					<i><svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.3952 17.44C19.3986 18.7645 19.1284 20.0743 18.6032 21.28C18.078 22.4857 17.31 23.5592 16.3515 24.4273C15.7234 25.0035 16.1536 26.082 16.99 25.995C17.5493 25.9383 18.1026 25.8291 18.6431 25.6689C20.0946 25.2417 21.4141 24.4266 22.4713 23.3041C23.5285 22.1816 24.2868 20.7907 24.6712 19.2687C25.0368 17.8867 25.0914 16.4353 24.8306 15.0277C24.5699 13.6201 24.0009 12.2944 23.1681 11.1543C22.3353 10.0142 21.2612 9.0904 20.0298 8.45516C18.7983 7.81993 17.4428 7.49042 16.0692 7.49236C15.7055 7.49204 15.342 7.51382 14.9807 7.55759C14.1536 7.66631 13.9442 8.8198 14.6786 9.23402C17.4921 10.8126 19.3973 13.8926 19.3973 17.44H19.3952ZM8.23387 20.1721C6.96216 20.1761 5.7044 19.8955 4.5454 19.3492C3.38641 18.8029 2.35311 18.0036 1.51518 17.0052C0.961023 16.3529 -0.0754249 16.7986 0.00894922 17.6683C0.0636692 18.2502 0.168253 18.8259 0.321446 19.3883C1.14852 22.4574 3.51308 24.8524 6.47451 25.6569C12.4401 27.279 17.7973 22.6422 17.7973 16.7105C17.7973 16.33 17.7765 15.9495 17.7348 15.5799C17.6306 14.7188 16.5213 14.5014 16.1234 15.2646C15.3551 16.7496 14.2161 17.9899 12.827 18.8539C11.438 19.7179 9.85086 20.1734 8.23387 20.1721ZM5.60473 8.55997C5.60164 7.23529 5.8721 5.92548 6.3977 4.71972C6.92329 3.51397 7.69168 2.44058 8.65053 1.57267C9.27865 0.995382 8.84844 -0.0820114 8.01199 0.00496289C7.44986 0.062779 6.89317 0.168221 6.34743 0.320245C4.8973 0.749736 3.5792 1.56565 2.52267 2.68779C1.46614 3.80993 0.707548 5.19969 0.321446 6.72046C-0.0441631 8.10242 -0.0987245 9.55388 0.162023 10.9615C0.422771 12.3691 0.991769 13.6947 1.82458 14.8348C2.65738 15.975 3.73145 16.8987 4.96289 17.534C6.19433 18.1692 7.5498 18.4987 8.92344 18.4968C9.2901 18.4968 9.65677 18.475 10.012 18.4315C10.839 18.3228 11.0484 17.1682 10.3141 16.7551C8.89138 15.9628 7.70178 14.7818 6.87246 13.3383C6.04314 11.8948 5.60426 10.2431 5.60473 8.55997ZM16.7713 5.82789C18.043 5.82386 19.3007 6.10446 20.4597 6.65077C21.6187 7.19708 22.652 7.9964 23.49 8.99484C24.042 9.64715 25.0795 9.2014 24.9952 8.33166C24.9405 7.74939 24.8359 7.17342 24.6827 6.61066C23.8545 3.54155 21.49 1.14759 18.5275 0.341988C12.5724 -1.29095 7.21513 3.34586 7.21513 9.27751C7.21513 9.65802 7.23596 10.0385 7.27763 10.4093C7.38179 11.2692 8.49428 11.4867 8.89115 10.7245C9.65825 9.24201 10.7958 8.00401 12.1829 7.14204C13.57 6.28007 15.1548 5.82632 16.7692 5.82898L16.7713 5.82789Z" fill="currentcolor"/>
+</svg>
+</i><span>Earn</span>
+				</a>
+			</li>
+ 			<li>
+				<a href="more.html" class="nav__link">
+					<i><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 0C20.1799 0 26 5.8201 26 13C26 20.1799 20.1799 26 13 26C5.8201 26 0 20.1799 0 13C0 5.8201 5.8201 0 13 0ZM18.85 11.05C18.3328 11.05 17.8368 11.2554 17.4711 11.6211C17.1054 11.9868 16.9 12.4828 16.9 13C16.9 13.5172 17.1054 14.0132 17.4711 14.3789C17.8368 14.7446 18.3328 14.95 18.85 14.95C19.3672 14.95 19.8632 14.7446 20.2289 14.3789C20.5946 14.0132 20.8 13.5172 20.8 13C20.8 12.4828 20.5946 11.9868 20.2289 11.6211C19.8632 11.2554 19.3672 11.05 18.85 11.05ZM13 11.05C12.4828 11.05 11.9868 11.2554 11.6211 11.6211C11.2554 11.9868 11.05 12.4828 11.05 13C11.05 13.5172 11.2554 14.0132 11.6211 14.3789C11.9868 14.7446 12.4828 14.95 13 14.95C13.5172 14.95 14.0132 14.7446 14.3789 14.3789C14.7446 14.0132 14.95 13.5172 14.95 13C14.95 12.4828 14.7446 11.9868 14.3789 11.6211C14.0132 11.2554 13.5172 11.05 13 11.05ZM7.15 11.05C6.63283 11.05 6.13684 11.2554 5.77114 11.6211C5.40545 11.9868 5.2 12.4828 5.2 13C5.2 13.5172 5.40545 14.0132 5.77114 14.3789C6.13684 14.7446 6.63283 14.95 7.15 14.95C7.66717 14.95 8.16316 14.7446 8.52886 14.3789C8.89455 14.0132 9.1 13.5172 9.1 13C9.1 12.4828 8.89455 11.9868 8.52886 11.6211C8.16316 11.2554 7.66717 11.05 7.15 11.05Z" fill="currentcolor"/>
+</svg>
+
+</i><span>More</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+ <div class="modal__overflow visible">
+	<div class="modal__container">
+		<div class="modal__header">
+			<i class="closemodal"></i>
+			<h2>Choose <strong>a coin</strong><br> to mine</h2>
+			<ul class="choose-coin__list">
+				<li>
+					<button class="change__coin ton_btn">
+						<div class="cc__info">
+							<i class="ton"></i>
+							<div class="cci__table">
+								<strong>TON</strong>
+								Start Mining
+							</div>
+						</div>
+						<div class="cc__checkpoint"></div>
+					</button>
+				</li>
+				<li>
+					<button class="change__coin check tron_btn">
+						<div class="cc__info">
+							<i class="tron"></i>
+							<div class="cci__table">
+								<strong>Tron(TRX)</strong>
+								Start Mining
+							</div>
+						</div>
+						<div class="cc__checkpoint"></div>
+					</button>
+				</li>
+				<li>
+					<button class="change__coin bitcoin_btn">
+						<div class="cc__info">
+							<i class="bitcoin"></i>
+							<div class="cci__table">
+								<strong>Bitcoin(BTC)</strong>
+								Start Mining
+							</div>
+						</div>
+						<div class="cc__checkpoint"></div>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+$(document).ready(function() {
+  function createAndAnimateCoins() {
+    // Создаем и стилизуем .text-left и .text-right элементы
+    let leftText = $('<div class="coins-text text-left">+0.000...01 BTC</div>').css({
+      left: '10px', // Заданное положение слева
+      position: 'absolute',
+      animation: 'moveUp 3s ease-in-out forwards'
+    });
+
+    let rightText = $('<div class="coins-text text-right">+0.000...012 BTC</div>').css({
+      right: '10px', // Заданное положение справа
+      position: 'absolute',
+      animation: 'moveDown 3s ease-in-out forwards'
+    });
+
+    // Добавляем элементы в контейнер
+    $('.cooler__overflow').append(leftText);
+    $('.cooler__overflow').append(rightText);
+
+    // Удаляем элементы через 3 секунды после завершения анимации
+    setTimeout(function() {
+      leftText.remove();
+      rightText.remove();
+    }, 3000);
+  }
+
+  // Запускаем анимацию каждые 3 секунды после загрузки страницы
+  setInterval(createAndAnimateCoins, 3000);
+});
+</script>
+</body>
+</html>
