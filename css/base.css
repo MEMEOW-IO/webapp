@@ -6,7 +6,8 @@ body { position:relative; color:rgba(255,255,255,.65);background:#0B0E16;  font-
  .btc .app__overflow,
  .ton .app__overflow,
  .trx .app__overflow {margin-bottom:70px;}
-	.app__body {height: 100vh; display: flex; flex-flow: column; justify-content:flex-start;max-width:576px; min-width:575px; padding:20px 0 0 0;background-image: url(../images/fon.png); }
+	.app__body {height: 100vh; display: flex; flex-flow: column; justify-content:flex-start;max-width:576px; min-width:575px; padding:20px 0 0 0;background-image: url(../images/fon.png);background-size: contain;
+    background-repeat: no-repeat; }
 body.trx {background:#331632 url('../images/homebg.png') center top no-repeat; background-size:cover; background-attachment: fixed;}
 body.ton {background:#100e36 url('../images/homebg.png') center top no-repeat; background-size:cover; background-attachment: fixed;}
 body.btc {background:#150403 url('../images/homebg.png') center top no-repeat; background-size:cover; background-attachment: fixed;}
@@ -128,7 +129,7 @@ box-shadow: 1px 2px 0px 0px #0E5B57;box-shadow: 0px 1px 1.5px 0px #60FFD2 inset;
 .tablo__bottom #withdraw {border:1px solid #44C678; background:#44C678; color:#fff;-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft;}
 .tablo__bottom #withdraw:after {content:''; display:inline-flex; width:24px; height:24px; min-width:24px; margin-left:10px; background:url('../images/arrowDown.svg') center/contain no-repeat;}
 .tablo__bottom #swapCoin {font-weight:400; color:#575A66; background:#121520; border:1px solid rgba(255,255,255,.1);-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: fadeInRight; animation-name: fadeInRight;}
-.cooler__overflow { background:url('../images/fanBlur.png') center/cover no-repeat;background-color: rgba(0, 0, 0, 0.5); overflow:hidden; padding:0 calc(150px - (150) * ((100vh - 700px) / (1200 - 700))); position:relative;}
+.cooler__overflow { background:url('../images/fanBlur.png') center/cover no-repeat;background-color: rgba(0, 0, 0, 0.5); overflow:hidden; padding:0 60px; position:relative;}
 .coins-text {
   position: absolute;
   opacity: 1;
@@ -225,7 +226,7 @@ box-shadow: 1px 2px 0px 0px #0E5B57;box-shadow: 0px 1px 1.5px 0px #60FFD2 inset;
 
 .navigation__bottom {position:fixed; left:0; bottom:0; right:0;z-index:20;  }
 	.navigation__cell {max-width:576px; min-width:575px; margin:0 auto; overflow:hidden; background:#1c1f26 url('../images/navBg.png') center bottom no-repeat; border-top:2px solid #c4c5c7; border-radius:50px 50px 0 0;}
-		.nav__list {display:flex; justify-content:space-between; padding:30px 50px 15px 50px;}
+		.nav__list {display:flex; justify-content:space-between; padding: 20px 25px;}
 		.nav__list li {}
 			.nav__link {display:flex;flex-flow:column;  align-items: center; color:#fff; font-weight:500;}
 			.nav__link i {margin-bottom:13px;}
@@ -392,8 +393,17 @@ opacity: 1;  transition: all 300ms ease-in-out 0s; cursor:pointer; padding:0; bo
 .slick-next.slick-arrow:focus {outline:none;}
 /*** Slick Slider Style  End***/
 
-
-
+@media screen and (max-height: 1000px) {
+.nav__link i {margin-bottom:5px;}
+.nav__link i svg {width:20px; height:20px;}
+.cooler__overflow { padding:0 calc(0px + (60) * ((100vw - 400px) / (700 - 400)));}
+}
+@media screen and (max-height: 800px) {
+.cooler__overflow { padding:0 calc(0px + (120) * ((100vw - 150px) / (450 - 150)));}
+}
+@media screen and (max-height: 650px) {
+.cooler__overflow { padding:0 calc(0px + (120) * ((100vw - 100px) / (450 - 100)));}
+}
 @media screen and (max-width: 575px) {
 	.navigation__cell,
  .app__body { max-width:100%; min-width:auto; width:100%;}
@@ -415,7 +425,7 @@ opacity: 1;  transition: all 300ms ease-in-out 0s; cursor:pointer; padding:0; bo
 	.htb__cell {padding:25px;}
 }
 @media screen and (max-width: 460px) {
-	.nav__list {padding:20px 40px;}
+
 	.nav__link span {font-size:14px;}
 	.htc__item {font-size:16px;}
 	.choose-coin__list {min-width:300px;}
@@ -431,7 +441,7 @@ opacity: 1;  transition: all 300ms ease-in-out 0s; cursor:pointer; padding:0; bo
 @media screen and (max-width: 395px) {
 .mining__coin img {max-width:80%;}
 #withdrwoaBtn, #changeCoin {font-size:22px;}
-.nav__list { padding: 20px 25px; }
+
 .htb__cell {padding:15px;}
 .mnb__header p,
 .moreList li a,
@@ -458,6 +468,5 @@ opacity: 1;  transition: all 300ms ease-in-out 0s; cursor:pointer; padding:0; bo
 .get__cell {padding:25px 15px;}
 .get__coins:before {width:30px; height:30px; min-width:30px; margin-right:6px;}
 .earh__article {padding-top:20px;}
-.nav__link i {margin-bottom:5px;}
-.nav__link i svg {width:20px; height:20px;}
+
 }
