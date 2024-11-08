@@ -128,7 +128,7 @@ box-shadow: 1px 2px 0px 0px #0E5B57;box-shadow: 0px 1px 1.5px 0px #60FFD2 inset;
 .tablo__bottom #withdraw {border:1px solid #44C678; background:#44C678; color:#fff;-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft;}
 .tablo__bottom #withdraw:after {content:''; display:inline-flex; width:24px; height:24px; min-width:24px; margin-left:10px; background:url('../images/arrowDown.svg') center/contain no-repeat;}
 .tablo__bottom #swapCoin {font-weight:400; color:#575A66; background:#121520; border:1px solid rgba(255,255,255,.1);-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: fadeInRight; animation-name: fadeInRight;}
-.cooler__overflow { background:url('../images/fanBlur.png') center/cover no-repeat;background-color: rgba(0, 0, 0, 0.5); overflow:hidden; padding:0 140px; position:relative;}
+.cooler__overflow { background:url('../images/fanBlur.png') center/cover no-repeat;background-color: rgba(0, 0, 0, 0.5); overflow:hidden; padding:0 70px; position:relative;}
 .coins-text {
   position: absolute;
   opacity: 1;
