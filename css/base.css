@@ -6,8 +6,7 @@ body { position:relative; color:rgba(255,255,255,.65);background:#0B0E16;  font-
  .btc .app__overflow,
  .ton .app__overflow,
  .trx .app__overflow {margin-bottom:70px;}
-	.app__body {height: 100vh; display: flex; flex-flow: column; justify-content:flex-start;max-width:576px; min-width:575px; padding:20px 0 0 0;background-image: url(../images/fon.png);background-size: contain;
-    background-repeat: no-repeat; }
+	.app__body {height: 100vh; display: flex; flex-flow: column; justify-content:flex-start;max-width:576px; min-width:575px; padding:20px 0 0 0;background-image: url(../images/fon.png);background-size: cover; }
 body.trx {background:#331632 url('../images/homebg.png') center top no-repeat; background-size:cover; background-attachment: fixed;}
 body.ton {background:#100e36 url('../images/homebg.png') center top no-repeat; background-size:cover; background-attachment: fixed;}
 body.btc {background:#150403 url('../images/homebg.png') center top no-repeat; background-size:cover; background-attachment: fixed;}
